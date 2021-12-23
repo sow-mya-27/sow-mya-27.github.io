@@ -3,14 +3,15 @@
     <head>
         <title>portfolio</title>
         <link href="./index.css" rel="stylesheet">
+        <script type="text/javascript" src="./gallery.js" ></script>
     </head>
     <body>
         <div class="navigation">
-            <a class="home" href="home.html"><img id="home1" src="images/home.jpg"></a>
+            <a class="home" href="index.html"><img id="home1" src="images/home.jpg"></a>
             <nav>
                 <ul>
                     
-                    <li ><button ><a href="home.html"  >Home</a></button></li>
+                    <li ><button ><a href="index.html"  >Home</a></button></li>
                     <li><button><a href="aboutme.html">About Me</a></button></li>
                     <li><button><a href="contactme.html">Contact Me</a></button></li>
                     <li><button id="home"><a href="#" active>Gallery</a></button></li>
@@ -19,20 +20,12 @@
         </div>
         <div class="main">
             
-            <div class="grid" >            
-                <img id="p1" src="images/cute1.jpg">
-                <img id="p2" src="images/cute2.jpg">
-                <img id="p3" src="images/cute3.jpg">
-                <img id="p1" src="images/cute4.jpeg">
-                <img id="p2" src="images/cute5.jpeg">
-                <img id="p3" src="images/cute6.jpeg">
-                <img id="p2" src="images/cute5.jpeg">
-                <img id="p3" src="images/cute6.jpeg">
+            <div class="grid" id="container">  
                 
             </div>
         
         
-
+            <button class="galleryAdmin"><a href="./galleryAdmin.html" >Gallery Admin</a></button>
         </div>
         <div class="footer">
             
@@ -45,7 +38,7 @@
             </ul>
             <ul class="links">
                 <p class="p">Site Links</p>
-                <li><a href="home.html">HOME</a></li>
+                <li><a href="index.html">HOME</a></li>
                 <li><a href="aboutme.html">ABOUT_ME</a></li>
                 <li><a href="contactme.html">CONTACT_ME</a></li>
                 <li><a href="gallery.html">GALLERY</a></li>

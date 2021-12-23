@@ -3,14 +3,16 @@
     <head>
         <title>portfolio</title>
         <link href="./index.css" rel="stylesheet">
+        <script type="text/javascript" src="myscripts.js"></script>
+
     </head>
     <body>
         <div class="navigation">
-            <a class="home" href="home.html"><img id="home1" src="images/home.jpg"></a>
+            <a class="home" href="index.html"><img id="home1" src="images/home.jpg"></a>
             <nav>
                 <ul>
                     
-                    <li ><button ><a href="home.html" >Home</a></button></li>
+                    <li ><button ><a href="index.html" >Home</a></button></li>
                     <li><button><a href="aboutme.html">About Me</a></button></li>
                     <li><button id="home"><a href="#" active>Contact Me</a></button></li>
                     <li><button><a href="gallery.html">Gallery</a></button></li>
@@ -18,47 +20,48 @@
             </nav>
         </div>
             <div class="main" id="contacts">
-                <p id="c"> CONTACT ME ON </p>
+                
+                <form name="myForm" class="form" onsubmit="return validateForm(event)" method="post">
+
+                    <label for="name" >enter your name</label>
+                    <input type="text" name="fname" class="name">
+                    <br>
+                    <label for="email">enter your email id</label>
+                    <input type="text" name="email" >
+                    <input type="submit" class="submit" value="Submit">
+
+                </form>
+              
                 <div class="contacts">
+                    <p id="c"> CONTACT ME ON </p>
                     <div class="single-contact">
                         <div class="icon">
                             <a href="https://www.github.com/gadireddysowmya"><img src="images/git.png" id="git"></a>
                         </div>
-                        <div class="icon-expanded">
-                            <code>github.com/gadireddysowmya</code>
-                        </div>
+                        
                     </div>
-                </div>
-                <div class="contacts">
+                
                     <div class="single-contact">
                         <div class="icon">
                             <a href="https://www.facebook.com/sowmi.gadi/"><img src="images/fb.png" id="fb"></a>
                         </div>
-                        <div class="icon-expanded">
-                            <code>www.facebook.com/sowmi.gadi</code>
-                        </div>
+                        
                     </div>
-                </div>
-                <div class="contacts" >
+                
                     <div class="single-contact">
                         <div class="icon">
                             <a href="https://www.instagram.com/sowmya_.reddy._/"><img src="images//insta.png" id="insta"></a>
                         </div>
-                        <div class="icon-expanded">
-                            <code>www.instagram.com/sowmya_.reddy.</code>
-                        </div>
+                        
                     </div>
-                </div>
-                <div class="contacts">
+                
                     <div class="single-contact">
                         <div class="icon">
                             <a href="https://www.linkedin.com/in/ sowmya-gadireddy-8127661b4"><img src="images/in.png" id="in"></a>
                         </div>
-                        <div class="icon-expanded">
-                            <code>www.linkedin.com/in/ sowmya-gadireddy</code>
-                        </div>
+                       
                     </div>
-                </div>
+                
             </div>
         
     </body>

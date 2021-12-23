@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>portfolio</title>
+    <link href="./index.css" rel="stylesheet" />
+    <script type="text/javascript" src="./gallery.js"></script>
+  </head>
+  <body>
+    <div class="navigation">
+      <a class="home" href="index.html"
+        ><img id="home1" src="images/home.jpg"
+      /></a>
+      <nav>
+        <ul>
+          <li>
+            <button><a href="index.html">Home</a></button>
+          </li>
+          <li>
+            <button><a href="aboutme.html">About Me</a></button>
+          </li>
+          <li>
+            <button><a href="contactme.html">Contact Me</a></button>
+          </li>
+          <li>
+            <button><a href="./gallery.html" active>Gallery</a></button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="main" id="main">
+      <div class="grid" id="container"></div>
+      <button
+        class="galleryAdmin"
+        name="buttonStatus"
+        onclick="deleteImage()"
+        id="off"
+      >
+        Delete photo
+      </button>
+      <button class="galleryAdmin" onclick="showModal()">Add photo</button>
+    </div>
+    <div id="modal" class="modal-close">
+      <span class="close">x</span>
+      <form name="form" class="form" onsubmit="addImage(event)">
+        <label for="name">enter name of image</label>
+        <input type="text" name="name" id="name" class="name" />
+        <br />
+        <label for="url">enter url</label>
+        <input type="text" name="url" class="url" id="url" /><br />
+        <label for="description">enter description</label>
+        <input
+          type="text"
+          name="description"
+          id="description"
+          class="description"
+        /><br />
+        <label for="date">enter upload date</label>
+        <input type="date" name="date" class="date" id="date" />
+        <div class="buttons">
+          <button class="closeModal" onclick="closeModal(event)">exit</button>
+          <input type="submit" class="submit" />
+        </div>
+      </form>
+    </div>
+
+    <div class="footer">
+      <ul class="social">
+        <p class="p">Follow Me On</p>
+        <li>
+          <a href="https://www.github.com/gadireddysowmya"
+            ><img src="images/git.png" id="git"
+          /></a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/sowmi.gadi/"
+            ><img src="images/fb.png" id="fb"
+          /></a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/sowmya_.reddy._/"
+            ><img src="images//insta.png" id="insta"
+          /></a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/ sowmya-gadireddy-8127661b4"
+            ><img src="images/in.png" id="in"
+          /></a>
+        </li>
+      </ul>
+      <ul class="links">
+        <p class="p">Site Links</p>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="aboutme.html">ABOUT_ME</a></li>
+        <li><a href="contactme.html">CONTACT_ME</a></li>
+        <li><a href="gallery.html">GALLERY</a></li>
+      </ul>
+    </div>
+  </body>
+</html>
